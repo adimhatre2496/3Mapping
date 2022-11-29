@@ -1,0 +1,87 @@
+package com.example.relationmappings.one2many.service;
+
+import com.example.relationmappings.one2many.entity.CartEntity;
+import com.example.relationmappings.one2many.entity.ItemEntity;
+import com.example.relationmappings.one2many.mapper.CartMapper;
+import com.example.relationmappings.one2many.model.Cart;
+import com.example.relationmappings.one2many.model.CartResponse;
+import com.example.relationmappings.one2many.model.Item;
+import com.example.relationmappings.one2many.repository.CartRepository;
+import com.example.relationmappings.one2many.repository.ItemRepository;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+@Log4j2
+@RequiredArgsConstructor
+public class CartService {
+
+    @Autowired
+    private final CartRepository cartRepository;
+
+    @Autowired
+    private final ItemRepository itemRepository;
+
+    @Autowired
+    private CartMapper cartMapper;
+
+    public CartResponse createItems(Cart cart) {
+        CartResponse cartResponse=new CartResponse();
+        CartEntity cartEntity=cartMapper.cartToEntity(cart);
+        cartRepository.save(cartEntity);
+        log.info("Item has been added successfully in your cart");
+        cartResponse.setId(cartEntity.getCartId());
+        return  cartResponse;
+    }
+
+    public Cart getCart(Long id) {
+        Optional<CartEntity> optionalCartEntity=cartRepository.findById(id);
+        Cart cart =new Cart();
+        if (optionalCartEntity.isPresent()){
+            cart = cartMapper.entityToModel(optionalCartEntity.get());
+            log.info("Received the item {} with " + id);
+        }else {
+            log.info("No items with id {} found " + id);
+        }
+        return cart;
+    }
+    public Cart updateCart(Long id, Cart cart) {
+        CartEntity cartEntity = new CartEntity();
+        Optional<CartEntity> optionalCartEntity = cartRepository.findById(id);
+        if (optionalCartEntity.isPresent()) {
+            cartEntity = cartMapper.cartToEntity(cart);
+            cartRepository.save(cartEntity);
+            log.info("Items has been updated");
+
+        } else {
+            log.info("No items with id {} found " + id);
+        }
+        return cart;
+    }
+    public void updateCart(Long id, Item item, String name) {
+
+        ItemEntity itemEntity = itemRepository.findByName(name);
+        if (itemEntity.getCartEntity().getCartId() == id && itemEntity.getName().equals(name)) {
+            itemEntity.setQuantity(item.getQuantity());
+            itemEntity.setPrice(item.getPrice());
+            itemRepository.save(itemEntity);
+        }
+    }
+
+    public void deleteCart(Long id) {
+        Optional<CartEntity> optionalCartEntity = cartRepository.findById(id);
+        if (optionalCartEntity.isPresent()) {
+            cartRepository.deleteById(id);
+            log.info("Item has been deleted");
+        } else {
+            log.info("No items with id {} found " + id);
+        }
+    }
+
+
+
+}

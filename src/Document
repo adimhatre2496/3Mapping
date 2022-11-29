@@ -1,0 +1,8 @@
+To run this application without application.properties file we have to use Following commond
+
+Build:
+mvn clean install -Dspring.config.location="file:/// LOCATION OF THE FILE"
+
+RUN:
+java -jar target\jar file --spring.config.location="LOCATION OF THE FILE"
+

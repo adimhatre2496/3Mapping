@@ -1,0 +1,47 @@
+2022-11-28T15:41:51.884+05:30  INFO 5268 --- [main] c.e.r.RelationMappingsApplicationTests   : Starting RelationMappingsApplicationTests using Java 19 with PID 5268 (started by CA-User in D:\NGPay\Task\relationMappings)
+2022-11-28T15:41:51.886+05:30  INFO 5268 --- [main] c.e.r.RelationMappingsApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2022-11-28T15:41:52.597+05:30  INFO 5268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-28T15:41:52.679+05:30  INFO 5268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces.
+2022-11-28T15:41:53.224+05:30  INFO 5268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-28T15:41:53.297+05:30  INFO 5268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-11-28T15:41:53.457+05:30  WARN 5268 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-11-28T15:41:53.638+05:30  INFO 5268 --- [main] com.zaxxer.hikari.HikariDataSource       : MapTable - Starting...
+2022-11-28T15:41:53.895+05:30  INFO 5268 --- [main] com.zaxxer.hikari.pool.HikariPool        : MapTable - Added connection org.postgresql.jdbc.PgConnection@584ca390
+2022-11-28T15:41:53.899+05:30  INFO 5268 --- [main] com.zaxxer.hikari.HikariDataSource       : MapTable - Start completed.
+2022-11-28T15:41:53.945+05:30  INFO 5268 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-28T15:41:55.058+05:30  INFO 5268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-28T15:41:55.074+05:30  INFO 5268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-28T15:41:55.709+05:30  WARN 5268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-28T15:41:56.102+05:30  INFO 5268 --- [main] c.e.r.RelationMappingsApplicationTests   : Started RelationMappingsApplicationTests in 4.553 seconds (process running for 5.54)
+2022-11-28T15:41:56.355+05:30  INFO 5268 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-28T15:41:56.359+05:30  INFO 5268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MapTable - Shutdown initiated...
+2022-11-28T15:41:56.381+05:30  INFO 5268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MapTable - Shutdown completed.
+2022-11-28T15:42:01.248+05:30  INFO 17092 --- [main] c.e.r.RelationMappingsApplication        : Starting RelationMappingsApplication v0.0.1-SNAPSHOT using Java 19 with PID 17092 (D:\NGPay\Task\relationMappings\target\relationMappings-0.0.1-SNAPSHOT.jar started by CA-User in D:\NGPay\Task\relationMappings)
+2022-11-28T15:42:01.254+05:30  INFO 17092 --- [main] c.e.r.RelationMappingsApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-11-28T15:42:02.048+05:30  INFO 17092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-28T15:42:02.157+05:30  INFO 17092 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 2 JPA repository interfaces.
+2022-11-28T15:42:02.953+05:30  INFO 17092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9898 (http)
+2022-11-28T15:42:02.964+05:30  INFO 17092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-28T15:42:02.965+05:30  INFO 17092 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-11-28T15:42:03.050+05:30  INFO 17092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-28T15:42:03.051+05:30  INFO 17092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1719 ms
+2022-11-28T15:42:03.262+05:30  INFO 17092 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-28T15:42:03.316+05:30  INFO 17092 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-11-28T15:42:03.483+05:30  WARN 17092 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-11-28T15:42:03.610+05:30  INFO 17092 --- [main] com.zaxxer.hikari.HikariDataSource       : MapTable - Starting...
+2022-11-28T15:42:03.917+05:30  INFO 17092 --- [main] com.zaxxer.hikari.pool.HikariPool        : MapTable - Added connection org.postgresql.jdbc.PgConnection@5710768a
+2022-11-28T15:42:03.921+05:30  INFO 17092 --- [main] com.zaxxer.hikari.HikariDataSource       : MapTable - Start completed.
+2022-11-28T15:42:03.964+05:30  INFO 17092 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-28T15:42:05.132+05:30  INFO 17092 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-28T15:42:05.144+05:30  INFO 17092 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-28T15:42:05.641+05:30  WARN 17092 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-28T15:42:06.072+05:30  INFO 17092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9898 (http) with context path ''
+2022-11-28T15:42:06.085+05:30  INFO 17092 --- [main] c.e.r.RelationMappingsApplication        : Started RelationMappingsApplication in 5.455 seconds (process running for 6.025)
+2022-11-28T15:42:19.488+05:30  INFO 17092 --- [http-nio-9898-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-28T15:42:19.489+05:30  INFO 17092 --- [http-nio-9898-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-28T15:42:19.493+05:30  INFO 17092 --- [http-nio-9898-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-11-28T15:42:19.731+05:30  INFO 17092 --- [http-nio-9898-exec-2] c.e.r.one2one.service.PersonService      : details of Aditya Mhatre Inserted successfully
+2022-11-28T15:42:30.309+05:30  INFO 17092 --- [http-nio-9898-exec-3] c.e.r.one2one.service.PersonService      : person with id 2 retrieved successfully
+2022-11-28T15:44:43.555+05:30  INFO 17092 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-28T15:44:43.557+05:30  INFO 17092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MapTable - Shutdown initiated...
+2022-11-28T15:44:43.566+05:30  INFO 17092 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : MapTable - Shutdown completed.
